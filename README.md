@@ -522,6 +522,13 @@ sudo systemctl restart jenkins
    Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
 
    **Prometheus Configuration:**
+On prometheus server - do the following
+
+```bash
+cd /etc/prometheus/
+ls
+sudo nano prometheus.yml
+```
 
    To configure Prometheus to scrape metrics from Node Exporter and Jenkins, you need to modify the `prometheus.yml` file. Here is an example `prometheus.yml` configuration for your setup:
 
