@@ -709,12 +709,14 @@ Also, add this below code in your pipeline last line.
 }
 ```
 
-I only did the pipeline till this stage... 
-make sure to check the syntax and if docker container is running stop and remove it, so that pipeline can create a new container for you with same port
-make sure to enable the port in security group according to the tool
-TMBD is not working now, use VPN to open TMDB app. 
-alternate TRAKT, and change docker file accouring to it. 
-## I HAVE ADDED A FILE AS MANOJPROJECT IN THIS REPO FOR THE PIPELINE SCRIPT
+#### I only did the pipeline till this stage... 
+some of the comman errors I faced while creating the pipeline
+
+* make sure to check the syntax and if docker container is running stop and remove it, so that pipeline can create a new container for you with same port
+* make sure to enable the port in security group according to the tool
+* TMBD is not working now, use VPN to open TMDB app, alternate TRAKT, and change docker file accouring to it.
+
+### I HAVE ADDED A FILE AS MANOJ(pipelinescript) IN THIS REPO FOR THE PIPELINE SCRIPT
 
 # Phase 6: Kubernetes
 
