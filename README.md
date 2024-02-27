@@ -683,10 +683,38 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
 
 
-**Phase 5: Notification**
+# Phase 5: Notification
 
 1. **Implement Notification Services:**
     - Set up email notifications in Jenkins or other notification mechanisms.
+
+enable MFA in your gmail acnt > manage gmail acnt > security > twofactor auth
+type app password > ### ### ### ###
+update your password in jenkins > creditals > username and password and add your app password > id : mail
+need to update the smtp in jenkins system check the email notification section in the video (1.10hrs-1.15hrs)
+
+Also, add this below code in your pipeline last line.
+```
+ post {
+     always {
+        emailext attachLog: true,
+            subject: "'${currentBuild.result}'",
+            body: "Project: ${env.JOB_NAME}<br/>" +
+                "Build Number: ${env.BUILD_NUMBER}<br/>" +
+                "URL: ${env.BUILD_URL}<br/>",
+            to: 'iambatmanthegoat@gmail.com',                                #change mail here
+            attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
+        }
+    }
+}
+```
+
+I only did the pipeline till this stage... 
+make sure to check the syntax and if docker container is running stop and remove it, so that pipeline can create a new container for you with same port
+make sure to enable the port in security group according to the tool
+TMBD is not working now, use VPN to open TMDB app. 
+alternate TRAKT, and change docker file accouring to it. 
+## I HAVE ADDED A FILE AS MANOJPROJECT IN THIS REPO FOR THE PIPELINE SCRIPT
 
 # Phase 6: Kubernetes
 
