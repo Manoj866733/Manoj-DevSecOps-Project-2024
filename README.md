@@ -542,7 +542,7 @@ sudo systemctl restart jenkins
 
    Make sure to replace `<your-jenkins-ip>` and `<your-jenkins-port>` with the appropriate values for your Jenkins setup.
 
-   Check the validity of the configuration file:
+   Check the validity of the configuration file:  (use the below command to check for any syntax issue in our file)
 
    ```bash
    promtool check config /etc/prometheus/prometheus.yml
@@ -558,6 +558,7 @@ sudo systemctl restart jenkins
 
    `http://<your-prometheus-ip>:9090/targets`
 
+We can see node_exporter in targets-prometheus now. (if node_exporter is down make sure to enable port 9100 in SG in EC2)
 
 ####Grafana
 
