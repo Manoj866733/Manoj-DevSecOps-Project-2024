@@ -18,10 +18,6 @@
 [![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)
 
 
-## Susbcribe:
-[https://www.youtube.com/@cloudchamp?
-](https://www.youtube.com/@cloudchamp?sub_confirmation=1)
-
 # Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
@@ -429,6 +425,7 @@ sudo systemctl restart jenkins
    [Install]
    WantedBy=multi-user.target
    ```
+   CTRL+s TO SAVE AND CTRL+X To EXIT FROM SERVICE.FILE
 
    Here's a brief explanation of the key parts in this `prometheus.service` file:
 
