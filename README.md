@@ -547,7 +547,7 @@ sudo nano prometheus.yml
          - targets: ['<your-jenkins-ip>:<your-jenkins-port>']
    ```
 
-   Make sure to replace `<your-jenkins-ip>` and `<your-jenkins-port>` with the appropriate values for your Jenkins setup.
+   Make sure to replace `<your-jenkins-ip>` and `<your-jenkins-port>` with the appropriate values for your Jenkins setup. eg: 3.210.151.223:8080
 
    Check the validity of the configuration file:  (use the below command to check for any syntax issue in our file)
 
