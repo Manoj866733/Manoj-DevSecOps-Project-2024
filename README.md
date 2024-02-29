@@ -681,6 +681,8 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
 
 2. **Configure Prometheus Plugin Integration:**
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
+Jenkins console > plugin > prometheus metrics > it will restart our jenkins  (check in jenkins > system  > and confirm prometheus is there)
+
 
 
 # Phase 5: Notification
